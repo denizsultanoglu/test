@@ -3,7 +3,7 @@ name: Deploy Frontend to Server
 on:
   push:
     branches:
-      - main # its main for now, but we can change it to reusable-table later
+      - main # its main for now, but we can change it to reusable-table laterr
 
 jobs:
   deploy:
@@ -31,4 +31,4 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           source: "build/." 
-          target: "/var/www" 
+          target: "/var/www/test" 
